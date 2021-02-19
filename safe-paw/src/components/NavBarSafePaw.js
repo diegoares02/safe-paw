@@ -16,16 +16,16 @@ function NavBarSafePaw() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/pet">Pets</Nav.Link>
+                    <Nav.Link href="/pets">Pets</Nav.Link>
                     <Nav.Link href="/people">People</Nav.Link>
-                    <Nav.Link href="/hospital">Hospitals</Nav.Link>
-                    <Nav.Link href="/vaccines">Vaccines</Nav.Link>                    
+                    <Nav.Link href="/hospitals">Hospitals</Nav.Link>
+                    <Nav.Link href="/vaccines">Vaccines</Nav.Link>
                 </Nav>
                 <DropdownButton
                     menuAlign="right"
                     title="User"
                     id="dropdown-menu-session"
-                    inline
+                    inline="true"
                 >
                     <Dropdown.Item eventKey="1">Sign out</Dropdown.Item>
                 </DropdownButton>

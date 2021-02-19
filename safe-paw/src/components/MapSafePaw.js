@@ -13,14 +13,13 @@ class MapSafePaw extends Component {
         };
     }
     render() {
-        const markerData = this.state.markerData;
         return (
             <MapContainer center={[51.505, -0.09]}
                 zoom={13}
                 scrollWheelZoom={false} >
                 <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                {markerData.map(marker => (
+                {this.state.markerData.map(marker => (
                     <Marker position={[marker.latitude, marker.longitude]} >
                         <Popup >
                             {marker.message}
