@@ -1,9 +1,13 @@
 import { Component } from 'react';
+import Container from 'react-bootstrap/Container'
+import HospitalTable from './HospitalTable'
 
 class Hospitals extends Component {
     render() {
         return (
-            <div>Hospitals</div>
+            <Container fluid>
+                <HospitalTable />
+            </Container>
         );
     }
 }

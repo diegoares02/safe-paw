@@ -1,20 +1,20 @@
 import { Component } from "react";
-import Table from 'react-bootstrap/Table'
-class PeopleTable extends Component {
+import Table from "react-bootstrap/Table"
+
+class VaccinesTable extends Component {
     render() {
         return (
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Id Number</th>
-                        <th>Name</th>
-                        <th>Last Name</th>
-                        <th>Phone Number</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Date of birth</th>
-                        <th>Username</th>
+                        <th>Code</th>
+                        <th>Date</th>
+                        <th>Dose</th>
+                        <th>Description</th>
+                        <th>Pet name</th>
+                        <th>Type</th>
+                        <th>Hospital</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,7 +25,6 @@ class PeopleTable extends Component {
                         <td>@mdo</td>
                         <td>Mark</td>
                         <td>Otto</td>
-                        <td>@mdo</td>
                         <td>Mark</td>
                         <td>Otto</td>
                     </tr>
@@ -36,9 +35,8 @@ class PeopleTable extends Component {
                         <td>@fat</td>
                         <td>@fat</td>
                         <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -47,13 +45,12 @@ class PeopleTable extends Component {
                         <td>Larry the Bird</td>
                         <td>@twitter</td>
                         <td>Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
                     </tr>
                 </tbody>
             </Table>
         );
     }
 }
-export default PeopleTable;
+export default VaccinesTable;

@@ -1,10 +1,13 @@
 import { Component } from 'react';
-import PetCreate from './PetCreate'
+import PetTable from './PetTable'
+import Container from 'react-bootstrap/Container'
 
 class Pets extends Component {
     render() {
         return (
-            <PetCreate />
+            <Container fluid>
+                <PetTable />
+            </Container>
         );
     }
 }
